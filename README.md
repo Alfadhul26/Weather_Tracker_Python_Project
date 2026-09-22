@@ -18,5 +18,8 @@ The user can do the following:
 4. Compare current year data with previous years
 
 ## Data API Integration:
-● Fetch live current weather and short-term forecasts for the user's city directly from the API and save those observations.
-● AI Meteorologist Summary: Send the past 7 days of weather data to an LLM to generate a natural-language summary, outfit suggestions, or local activity recommendations based on upcoming conditions.
+- Fetch live current weather and short-term forecasts for the user's city directly from the API and save those observations.
+- AI Meteorologist Summary: Send the past 7 days of weather data to an LLM to generate a natural-language summary, outfit suggestions, or local activity recommendations based on upcoming conditions.
+
+## Links:
+Deployed Streamlit Link: 
