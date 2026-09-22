@@ -1,3 +1,4 @@
+import streamlit as st
 import requests
 import pandas as pd
 from datetime import date, timedelta
@@ -70,7 +71,7 @@ def find_previous_year_temperature(historical_df,selected_date):
 def fetch_weather_forecast():
     url = "https://open-weather13.p.rapidapi.com/fivedaysforcast"
     querystring = {"lang": "EN","longitude": "50.5870","latitude": "26.2235"}
-    headers = {"x-rapidapi-key": "open_weather_key","x-rapidapi-host": "open-weather13.p.rapidapi.com"}
+    headers = {"x-rapidapi-key": st.secrets["open_weather_key"],"x-rapidapi-host": "open-weather13.p.rapidapi.com"}
     response = requests.get(url,headers=headers,params=querystring)
     forecast_data = response.json()
     forecast_df = pd.json_normalize(forecast_data["list"])[["dt_txt", "main.temp"]]
@@ -111,7 +112,7 @@ Give a concise response with exactly 4 bullet points:
 
 Keep each bullet to one sentence. Do not provide explanations or extra information.
 """
-    client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key="llm_key")
+    client = OpenAI(base_url="https://openrouter.ai/api/v1", api_key= st.secrets["llm_key"])
     completion = client.chat.completions.create(
         model="inclusionai/ling-3.0-flash-vl:free",
         messages=[{"role": "system", "content": "You are a meteorologist who provides practical weather advice for bahrain."},
