@@ -11,7 +11,7 @@ The user can do the following:
 3. Search observations by date
 4. View all observations
 
-## Additional Function
+## Additional Functions
 1. Display temperature trends using line graph
 2. Filtering observations by month or season
 3. Predict tomorrow's weather based on fetched API data
