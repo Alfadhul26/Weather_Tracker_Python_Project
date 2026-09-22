@@ -22,5 +22,5 @@ The user can do the following:
 - AI Meteorologist Summary: Send the past 7 days of weather data to an LLM to generate a natural-language summary, outfit suggestions, or local activity recommendations based on upcoming conditions.
 
 ## Links:
-Deployed Streamlit Link: https://weather-tracker-project.streamlit.app
-Weather Tracker Demonstration: https://youtu.be/Cbs6mRNRylM
+- Deployed Streamlit Link: https://weather-tracker-project.streamlit.app
+- Weather Tracker Demonstration: https://youtu.be/Cbs6mRNRylM
